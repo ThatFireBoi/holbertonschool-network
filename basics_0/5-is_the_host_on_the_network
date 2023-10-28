@@ -1,9 +1,12 @@
 #!/usr/bin/env bash
-# find the host on a network
+# Pings and IP address passed as an argument
 
+# Checks if an argument is provided
 if [ "$1" ]
 then
-ping -c 5 "$1"
+    # Ping the provided IP address five times
+    ping -c 5 "$1"
 else
+    # Display the usage message if no argument is passed
     echo "Usage: 5-is_the_host_on_the_network {IP_ADDRESS}"
 fi
